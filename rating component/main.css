@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body .container .content .rate .rate-number, body .container .content .star {
+  width: 25px;
+  height: 25px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #7c8798;
+}
+
+body {
+  background-color: black;
+}
+body .container {
+  width: 350px;
+  height: 400px;
+  display: block;
+  margin: 50% auto;
+  background-color: #252d37;
+}
+body .container .content {
+  padding: 5%;
+  display: block;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+body .container .content h1 {
+  font-size: 30px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 60px;
+}
+body .container .content p {
+  font-size: 15px;
+  color: #959eac;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+body .container .content .rate {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .content .rate .rate-number {
+  text-align: center;
+  color: #959eac;
+  cursor: pointer;
+}
+body .container .content .rate .rate-number:hover {
+  background-color: #fb7413;
+  color: white;
+}
+body .container .content .rate .rate-number :active {
+  color: white;
+  background-color: #959eac;
+}
+body .container .content .submit {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fb7413;
+  color: white;
+  cursor: pointer;
+}
+body .container .content .submit:hover {
+  background-color: white;
+  color: #fb7413;
+}/*# sourceMappingURL=main.css.map */

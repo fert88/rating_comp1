@@ -1,0 +1,96 @@
+$White: hsl(0, 0%, 100%);
+$Lightgrey : hsl(217, 12%, 63%);
+$Mediumgrey : hsl(216, 12%, 54%);
+$Darkblue : hsl(213, 19%, 18%);
+$Verydarkblue : hsl(216, 12%, 8%);
+$Orange: hsl(25, 97%, 53%);
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+
+}
+%circle {
+    width: 25px;
+    height: 25px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: $Mediumgrey; 
+      
+}
+body{
+    background-color: black;
+    .container{
+        width:350px;
+        height: 400px;
+        display:block;
+        margin: 50% auto;
+        background-color: $Darkblue;
+        .content{
+            padding: 5% ;
+            display: block;
+            width: 90%;
+            margin: auto;
+            justify-content: center;
+            .star{
+                @extend %circle;
+                 
+            }
+            h1{
+                font-size: 30px;
+                color: white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                line-height: 60px;
+            }
+            p{
+                font-size: 15px;
+                color: $Lightgrey;
+                line-height: 30px;
+                padding-bottom: 15px;
+            }
+            .rate{
+                display: flex;
+                justify-content: space-between;
+                
+                .rate-number{
+                    @extend %circle;
+                    text-align: center;
+                    color: $Lightgrey;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $Orange;
+                        color: white; 
+                    }
+                    :active{
+                        color: white;
+                        background-color: $Lightgrey;
+                        
+                    }   
+                }
+            }
+            .submit{
+                display: block;
+                width: 100%;
+                margin-top: 20px;
+                font-size: 20px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 20px;
+                background-color: $Orange;
+                color: white;
+                cursor: pointer;
+                &:hover{
+                    background-color: white;
+                    color: $Orange;
+                }
+            }
+        }
+        
+        
+
+    }
+
+
+}
